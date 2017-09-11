@@ -31,7 +31,7 @@ function log(text){ console.log(getTS() + "\xa0" + text); }
 
 function init(){
 	console.log(
-		"\n"                     +
+		"\n"                   +
 		"  ################\n" +
 		"  # RNN.js START #\n" +
 		"  ################\n"
@@ -44,13 +44,13 @@ function init(){
 	};
 
 	var _exit = function(err, chars){
-		if (isset(chars)) chars = prettify(chars, false);
 		switch(err){
 			case 1: {
 				log("Error: No inputs specified!");
 				break;
 			}
 			case 2: {
+				chars = isset(chars) ? prettify(chars, false) : "err";
 				log("Error: Not all inputs are integers! Failed to parse: " + chars);
 				break;
 			}
