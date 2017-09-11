@@ -12,9 +12,7 @@ var norm = 0.5;
 
 var rept = 100000;
 
-var noop = () => {};
-
-function isset(_var) { return (_var && _var != null && _var != "" ) ? true : false; }
+function isset(_var) { return (_var && _var != null && _var != "") ? true : false; }
 
 function getTS() {
 	var date = new Date();
@@ -41,12 +39,12 @@ function init(){
 
 	var _check = function(inArr){
 		var _errs = [];
-		inArr.forEach(function(i){ isNaN(i) ? _errs.push(i) : noop(); });
+		inArr.forEach(function(i){ if (isNaN(i)) _errs.push(i); });
 		_errs.length <= 0 ? rnn(inArr) : _exit(2, _errs);
 	};
 
 	var _exit = function(err, chars){
-		chars = prettify(chars, false);
+		if (isset(chars)) chars = prettify(chars, false);
 		switch(err){
 			case 1: {
 				log("Error: No inputs specified!");
@@ -56,7 +54,7 @@ function init(){
 				log("Error: Not all inputs are integers! Failed to parse: " + chars);
 				break;
 			}
-			default: noop();
+			default: break;
 		}
 		console.log();
 		process.exit(1);
