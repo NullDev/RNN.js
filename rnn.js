@@ -56,10 +56,7 @@ function init(){
 				log("Error: Not all inputs are integers! Failed to parse: " + chars);
 				break;
 			}
-			default: {
-				noop();
-				break;
-			}
+			default: noop();
 		}
 		console.log();
 		process.exit(1);
@@ -80,8 +77,8 @@ function rnneval(in_len){
 }
 
 function prettify(arr, nl){
-	var _ = JSON.stringify(arr).replace(/\[|\]/g, "")
-	return nl ? _.replace(/\,/g, "\n") : _.replace(/\,/g, ", ");
+	arr = JSON.stringify(arr).replace(/\[|\]/g, "")
+	return nl ? arr.replace(/\,/g, "\n") : arr.replace(/\,/g, ", ");
 }
 
 function rnn(input){
@@ -136,7 +133,7 @@ function rnn(input){
 	var ms = ET - ST;
 	log("Took " + ms + "MS");
 	console.log(
-		"\n"                     +
+		"\n"                  +
 		"  ###############\n" +
 		"  # RNN.js STOP #\n" +
 		"  ###############\n"
