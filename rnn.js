@@ -46,7 +46,7 @@ function init(){
 	};
 
 	var _exit = function(err, chars){
-		chars = JSON.stringify(chars).replace(/\,/g, ", ").replace(/\[|\]/g, "");
+		chars = prettify(chars, false);
 		switch(err){
 			case 1: {
 				log("Error: No inputs specified!");
