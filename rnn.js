@@ -6,13 +6,13 @@
 //----------------------------//
 ////////////////////////////////
 
-const rate = 0.05;
+var rate = 0.05;
 
-const norm = 0.5;
+var norm = 0.5;
 
-const rept = 100000;
+var rept = 100000;
 
-const noop = () => {};
+var noop = () => {};
 
 function isset(_var) { return (_var && _var != null && _var != "" ) ? true : false; }
 
@@ -62,7 +62,7 @@ function init(){
 		process.exit(1);
 	};
 
-	const input = process.argv.slice(2);
+	var input = process.argv.slice(2);
 	isset(input) ? _check(input) : _exit(1);
 }
 
