@@ -1,4 +1,7 @@
 # RNN.js
+
+[![Build Status](https://travis-ci.org/NLDev/RNN.js.svg?branch=master)](https://travis-ci.org/NLDev/RNN.js)
+
 A very simple Recurrent Neural Network implementation
 
 Example usage: `node rnn.js 0 0 1 0 1 1 1 0 0`
