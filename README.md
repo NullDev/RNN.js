@@ -18,6 +18,8 @@ $ `git clone https://github.com/NLDev/RNN.js.git && cd RNN.js` <br><br>
 $ `node rnn.js` <br>
 like in the example above.
 
+**Optional:** You can also use `rnn.min.js`. It has the excat same functionality, just with minified code. 
+
 Screenshot:
 
 <img src="https://raw.githubusercontent.com/NLDev/RNN.js/master/.src/screen1.png" />
