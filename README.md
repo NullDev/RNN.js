@@ -2,6 +2,10 @@
 
 [![Build Status](https://travis-ci.org/NLDev/RNN.js.svg?branch=master)](https://travis-ci.org/NLDev/RNN.js)
 
+<p align="center">
+<img height="auto" width="200" src="https://raw.githubusercontent.com/NLDev/RNN.js/master/.src/rnnjs.png" />
+</p>
+
 A very simple Recurrent Neural Network implementation
 
 Example usage: `node rnn.js 0 0 1 0 1 1 1 0 0`
@@ -19,6 +23,8 @@ $ `node rnn.js` <br>
 like in the example above.
 
 **Optional:** You can also use `rnn.min.js`. It has the excat same functionality, just with minified code. 
+
+<hr>
 
 Screenshot:
 
