@@ -83,11 +83,18 @@ function rnn(input){
 	var sem = null, len = null;
 
 	var ST = new Date();
+	log("Rate: " + rate);
+	log("Norm: " + norm);
+	log("Iterations: " + rept);
+	console.log();
 	log("Input: " + prettify(input, false));
 
 	var neu1 = Math.random() - norm;
 	var neu2 = Math.random() - norm;
 	var neu3 = Math.random() - norm;
+
+	console.log();
+	log("Random: " + neu1 + " | " + neu2 + " | " + neu3);
 
 	len = input.length;
 	var evalIn = rnneval(len);
@@ -121,6 +128,7 @@ function rnn(input){
 			}
 		}
 	}
+	console.log();
 	for (var j = 0; j < len - 1 ; j++){
 		evalIn[0][j] = neu1 * input[j] + neu2 * output[0][j] + neu3;
 		output[0][j + 1] = 1 / (1 + Math.exp(-1 * evalIn[0][j])); 
