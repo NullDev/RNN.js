@@ -1,9 +1,9 @@
 # RNN.js
 
-[![Build Status](https://travis-ci.org/NLDev/RNN.js.svg?branch=master)](https://travis-ci.org/NLDev/RNN.js)
+[![Build Status](https://travis-ci.org/NullDev/RNN.js.svg?branch=master)](https://travis-ci.org/NullDev/RNN.js)
 
 <p align="center">
-<img height="auto" width="200" src="https://raw.githubusercontent.com/NLDev/RNN.js/master/.src/rnnjs.png" />
+<img height="auto" width="200" src="https://raw.githubusercontent.com/NullDev/RNN.js/master/.src/rnnjs.png" />
 </p>
 
 A very simple Recurrent Neural Network implementation
@@ -17,8 +17,8 @@ Example usage: `node rnn.js 0 0 1 0 1 1 1 0 0`
 $ `node -v` <br>
 If this returns a version number, NodeJS is installed. **If not**, get NodeJS <a href="https://nodejs.org/en/download/package-manager/">here</a>. <br><br>
 2. Clone the repository and navigate to it. If you have Git installed, type <br>
-$ `git clone https://github.com/NLDev/RNN.js.git && cd RNN.js` <br>
-If not, download it <a href="https://github.com/NLDev/RNN.js/archive/master.zip">here</a> and extract the ZIP file.<br>
+$ `git clone https://github.com/NullDev/RNN.js.git && cd RNN.js` <br>
+If not, download it <a href="https://github.com/NullDev/RNN.js/archive/master.zip">here</a> and extract the ZIP file.<br>
 Then navigate to the folder.<br><br>
 3. Launch it with <br>
 $ `node rnn.js` <br>
@@ -30,4 +30,4 @@ like in the example above.
 
 Screenshot:
 
-<img src="https://raw.githubusercontent.com/NLDev/RNN.js/master/.src/screen1.png" />
+<img src="https://raw.githubusercontent.com/NullDev/RNN.js/master/.src/screen1.png" />
